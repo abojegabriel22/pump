@@ -493,6 +493,13 @@ footer{
   padding-right: 0.2rem;
   white-space: nowrap; 
 }
+.hiden{
+  visibility: hidden;
+  display: none;
+  position: absolute;
+  left: 15px;
+  padding-top: 5px;
+}
 .no-padding{
   padding-left: 0px !important;
   overflow: hidden;
@@ -695,6 +702,10 @@ footer{
   .buttons-div{
     margin-right: 1rem;
     margin-top: 14px;
+  }
+  .hiden{
+    visibility: visible;
+    display: block;
   }
   .start-new-coin{
     padding-top: 0px;
