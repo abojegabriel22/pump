@@ -2742,7 +2742,7 @@
            </section>
            <section class="footer bg-transparent p-color">
             <footer>
-              <div class="container pt-4 px-3">
+              <div class="container pt-4 px-3 space-for-fixed-botom">
                 <div class="row align-items-center text-center">
                   
                   <!-- Left -->
@@ -2763,8 +2763,50 @@
 
                   <!-- Right (empty or future use) -->
                   <div class="col-12 col-md-3 text-md-end d-none d-md-block"></div>
-
                 </div>
+              </div>
+              <div>
+                <nav class="navbar navbar-dark bg-dark-bottom border-top fixed-bottom border-secondary d-block d-lg-none">
+                  <div class="container-fluid d-flex justify-content-around px-0 custom-icons">
+                    <a href="/board" class="text-center navlink-home2 py-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 25" fill="none" class="sidebar-logo-transition-multi-2 h-6 w-6"><path d="M13.8153 2.55582C12.7771 1.64342 11.2229 1.64342 10.1847 2.55582L3.93468 8.04824C3.34056 8.57035 3 9.323 3 10.1139V18.459C3 19.9778 4.23122 21.209 5.75 21.209H8.16057C9.12707 21.209 9.91057 20.4255 9.91057 19.459V17.209C9.91057 16.1044 10.806 15.209 11.9106 15.209H12C13.1046 15.209 14 16.1044 14 17.209V19.459C14 20.4255 14.7835 21.209 15.75 21.209H18.25C19.7688 21.209 21 19.9778 21 18.459V10.1139C21 9.323 20.6594 8.57035 20.0653 8.04824L13.8153 2.55582Z" fill="currentColor"></path></svg>
+                    </a>
+                    <a href="/board" class="text-center text-light">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 25" fill="none" class="h-[30px] w-[30px]"><path d="M16.2426 12.2094H7.75736M12 16.4521V7.9668M21.25 12.209C21.25 17.3176 17.1086 21.459 12 21.459C6.89137 21.459 2.75 17.3176 2.75 12.209C2.75 7.10035 6.89137 2.95898 12 2.95898C17.1086 2.95898 21.25 7.10035 21.25 12.209Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg>
+                    </a>
+                    <a href="/create" class="text-center text-light">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" class="h-[30px] w-[30px]"><path d="M4.75 4.75H14.25C15.3546 4.75 16.25 5.64543 16.25 6.75V8.75L19.7681 6.81505C20.4345 6.44851 21.25 6.93067 21.25 7.69127V16.3087C21.25 17.0693 20.4345 17.5515 19.7681 17.1849L16.25 15.25V17.25C16.25 18.3546 15.3546 19.25 14.25 19.25H4.75C3.64543 19.25 2.75 18.3546 2.75 17.25V6.75C2.75 5.64543 3.64543 4.75 4.75 4.75Z" stroke="#F8FAFC" stroke-width="1.5"></path><path d="M12.25 12C12.25 13.5188 11.0188 14.75 9.5 14.75C7.98122 14.75 6.75 13.5188 6.75 12C6.75 10.4812 7.98122 9.25 9.5 9.25C11.0188 9.25 12.25 10.4812 12.25 12Z" stroke="#F8FAFC" stroke-width="1.5"></path></svg>
+                    </a>
+                    <a href="/live" class="text-center text-light">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" class="h-[30px] w-[30px]"><path d="M7 2.75V10.75M7 10.75H5.75C4.64543 10.75 3.75 11.6454 3.75 12.75V16.25C3.75 17.3546 4.64543 18.25 5.75 18.25H7M7 10.75H8.25C9.35457 10.75 10.25 11.6454 10.25 12.75V16.25C10.25 17.3546 9.35457 18.25 8.25 18.25H7M7 18.25V21.25M17 2.75001V5.75M17 5.75H15.75C14.6454 5.75 13.75 6.64543 13.75 7.75V16.25C13.75 17.3546 14.6454 18.25 15.75 18.25H17M17 5.75H18.25C19.3546 5.75 20.25 6.64543 20.25 7.75V16.25C20.25 17.3546 19.3546 18.25 18.25 18.25H17M17 18.25V21.25" stroke="#F8FAFC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    </a>
+                    <!-- Example single dropdown button -->
+                    <div class="btn-group dropup">
+                      <a class="nav-link" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="icon-wrapper">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 25" fill="none" class="h-5 w-5"><path d="M12 4.95898C12.5523 4.95898 13 4.51127 13 3.95898C13 3.4067 12.5523 2.95898 12 2.95898C11.4477 2.95898 11 3.4067 11 3.95898C11 4.51127 11.4477 4.95898 12 4.95898Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 13.209C12.5523 13.209 13 12.7613 13 12.209C13 11.6567 12.5523 11.209 12 11.209C11.4477 11.209 11 11.6567 11 12.209C11 12.7613 11.4477 13.209 12 13.209Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 21.459C12.5523 21.459 13 21.0113 13 20.459C13 19.9067 12.5523 19.459 12 19.459C11.4477 19.459 11 19.9067 11 20.459C11 21.0113 11.4477 21.459 12 21.459Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        </span>
+                      
+                      </a>
+                      <ul class="dropdown-menu dropdown-bg-bottom dropdown-menu-end left-auto">
+                        <li><a class="dropdown-item text-white nav-text-size bg-hover" href="#">PumpSwap</a></li>
+                        <li><a class="dropdown-item text-white nav-text-size bg-hover" href="#">livestream policy</a></li>
+                        <li><a class="dropdown-item text-white nav-text-size bg-hover" href="#">DMCA policy</a></li>
+                        <li><a class="dropdown-item text-white nav-text-size bg-hover" href="#">trademark guidelines</a></li>
+                        <li><a class="dropdown-item text-white nav-text-size bg-hover" href="#">how it works</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                          <span class="dropdown-item text-white nav-text-size bg-hover-non">
+                            <span class="twitter-icon me-2"><i class="fa-brands fa-x-twitter"></i></span>
+                            <span class="instagram-icon me-2"><i class="fa-brands fa-instagram"></i></span>
+                            <span class="tiktok-icon me-2"><i class="fa-brands fa-tiktok" style="color: #ffffff;"></i></span>
+                            <span class="youtube-icon me-2"><i class="fa-brands fa-youtube" style="color:#ffffff;"></i></span>
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
               </div>
 
             </footer>
