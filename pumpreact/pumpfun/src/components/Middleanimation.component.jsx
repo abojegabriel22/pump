@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 const MiddleAnimation = () => {
   const scrollContainerRef = useRef(null);
   const scrollLeftBtnRef = useRef(null);
@@ -76,12 +77,12 @@ const MiddleAnimation = () => {
               </svg>
             </button>
             <ul className="dropdown-menu sort-bg px-1">
-              <li><a className="dropdown-item sort-bg-hover" href="#">sort: featured 🔥</a></li>
-              <li><a className="dropdown-item sort-bg-hover" href="#">sort: last trade</a></li>
-              <li><a className="dropdown-item sort-bg-hover" href="#">sort: creation time</a></li>
-              <li><a className="dropdown-item sort-bg-hover" href="#">sort: last reply</a></li>
-              <li><a className="dropdown-item sort-bg-hover" href="#">sort: currently live</a></li>
-              <li><a className="dropdown-item sort-bg-hover" href="#">sort: market cap</a></li>
+              <li><Link className="dropdown-item sort-bg-hover" data-bs-toggle="modal" data-bs-target="#exampleModal">sort: featured 🔥</Link></li>
+              <li><Link className="dropdown-item sort-bg-hover" data-bs-toggle="modal" data-bs-target="#exampleModal">sort: last trade</Link></li>
+              <li><Link className="dropdown-item sort-bg-hover" data-bs-toggle="modal" data-bs-target="#exampleModal">sort: creation time</Link></li>
+              <li><Link className="dropdown-item sort-bg-hover" data-bs-toggle="modal" data-bs-target="#exampleModal">sort: last reply</Link></li>
+              <li><Link className="dropdown-item sort-bg-hover" data-bs-toggle="modal" data-bs-target="#exampleModal">sort: currently live</Link></li>
+              <li><Link className="dropdown-item sort-bg-hover" data-bs-toggle="modal" data-bs-target="#exampleModal">sort: market cap</Link></li>
             </ul>
           </div>
 
@@ -90,15 +91,15 @@ const MiddleAnimation = () => {
             <div className="d-flex align-items-center gap-2 text-white small toggle-half">
               <span>show animations:</span>
               <div className="d-flex gap-1 width-auto">
-                <span className="px-1 sort-bg text-black rounded text-size2 cursor-pointer">on</span>
-                <span className="px-1 text-body-secondary1 body rounded text-size2 cursor-pointer">off</span>
+                <span className="px-1 sort-bg text-black rounded text-size2 cursor-pointer" data-bs-toggle="modal" data-bs-target="#exampleModal">on</span>
+                <span className="px-1 text-body-secondary1 body rounded text-size2 cursor-pointer" data-bs-toggle="modal" data-bs-target="#exampleModal">off</span>
               </div>
             </div>
             <div className="d-flex align-items-center text-white small gap-2 toggle-half">
               <span>include nsfw:</span>
               <div className="d-flex gap-1">
-                <span className="px-1 sort-bg text-black rounded text-size2 cursor-pointer">on</span>
-                <span className="px-1 body text-body-secondary1 rounded text-size2 cursor-pointer">off</span>
+                <span className="px-1 sort-bg text-black rounded text-size2 cursor-pointer" data-bs-toggle="modal" data-bs-target="#exampleModal">on</span>
+                <span className="px-1 body text-body-secondary1 rounded text-size2 cursor-pointer" data-bs-toggle="modal" data-bs-target="#exampleModal">off</span>
               </div>
             </div>
           </div>
@@ -120,6 +121,7 @@ const MiddleAnimation = () => {
             id="scrolling-category"
             ref={scrollContainerRef}
             style={{ scrollBehavior: "smooth" }}
+            data-bs-toggle="modal" data-bs-target="#exampleModal"
           >
             {[
               "🔥 Honda Solflare 🚗✨",

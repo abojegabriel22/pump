@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import MiddleAnimation from "./Middleanimation.component";
 import { LastCards } from "./Lastanimation.component";
+import { Link } from "react-router-dom";
 
 const trendingData = [
   {
@@ -118,12 +119,12 @@ export default function NewcoinComponent() {
 	return(
 		<div className="col-lg-10 new-coin-h4-div my-4 ms-lg-auto me-lg-4">
 			<div className="w-100 text-center start-new-coin">
-				<a href="/" className="text-light new-coin-h4"><h4>[start a new coin]</h4></a>
+				<Link className="text-light new-coin-h4" data-bs-toggle="modal" data-bs-target="#exampleModal"><h4>[start a new coin]</h4></Link>
 			</div>
 			<div className="input-div col-xl-5 col-md-6 mx-auto mt-5 mb-4 pt-1">
 				<div className="input-group mb-3">
 					<input type="text" className="form-control py-2 input-background no-border rounded" placeholder="search for token" aria-label="Recipient’s username" aria-describedby="button-addon2" />
-					<button className="btn ms-2 rounded input-button" type="button" id="button-addon2">search</button>
+					<button className="btn ms-2 rounded input-button" type="button" id="button-addon2" data-bs-toggle="modal" data-bs-target="#exampleModal">search</button>
 				</div>
 			</div>
 				{/* ---------------------- carousels -------------------- */}
@@ -175,7 +176,7 @@ export default function NewcoinComponent() {
               {trendingData.map((item, idx) => (
                 <SwiperSlide className="swiper-slide media-break" key={idx}>
                   <div className="card-wrapper" style={{ width: "280px", maxWidth: "280px" }}>
-                    <a href="/" draggable="false" className="d-block w-100 text-decoration-none">
+                    <Link draggable="false" className="d-block w-100 text-decoration-none" data-bs-toggle="modal" data-bs-target="#exampleModal">
                       <div className={`card mb-0 shadow-sm p-3 rounded card-hover ${idx === 1 ? "border-red" : ""}`} style={{ backgroundColor: "#1C2530" }}>
                         <div className="d-flex">
                           <div className="me-3 flex-shrink-0 position-relative" style={{ width: "72px", height: "72px" }}>
@@ -209,7 +210,7 @@ export default function NewcoinComponent() {
                       <div className="mt-2 description-line px-1 text-light">
                         {item.description}
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </SwiperSlide>
                 ))}

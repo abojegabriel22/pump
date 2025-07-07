@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 export const LastCards = () => {
   return (
@@ -7,7 +8,7 @@ export const LastCards = () => {
           {/* <!-- ------------------- col duplicate as many as you want ----------------  --> */}
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/QmYQ9RReezM1vPP4pP4mkdwbWjriwqkhigbqwhd57cmQso?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -42,7 +43,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/bafkreicdy5xhv3lojlw7h4ynpkw4tsfwucsbcudtziu7or7jajctipuzoi?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -75,7 +76,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/bafybeia77cqx74b6tbqpd6nuuspftpjvuh3e2rznmdqi4pkwkpe54jrsmy?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -110,7 +111,7 @@ export const LastCards = () => {
 
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/QmVvXERRw5E9XRFrNAsrJXxS2T96ef6gy4YiU8L8Jr5CeD?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -145,7 +146,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/QmSE2iAhrdbH8LFCZPMYMZL9UNqkmLPJqM2CWKhiQuE2UR?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -180,7 +181,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover">
+              <div className="row g-0 col-hover" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/QmZcc925tQDB2efZAgkrsc1Td6PyTuWcn4cVHvStoNaMuf?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -215,7 +216,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/bafybeifcfo6jz5dcubms66norizywtlxiju2hjhyhroa4igbpopbqvsvri?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -250,7 +251,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover">
+              <div className="row g-0 col-hover" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/QmP3iXrkQ8m4vCUBiywPWQoc8sHjyS5drDwUCGGEyk9QDr?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -285,7 +286,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/bafkreiguorlhb2yswof3u3rcje65loebdshdaoq6hwm7nf7olwiqgvdo2u?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -320,7 +321,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary border-red">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1 position-relative" style={{ width: "128px" }}>
                     <img src="https://prod-livestream-thumbnails-841162682567.s3.us-east-1.amazonaws.com/335682/1750792332888.jpeg?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -357,7 +358,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/bafkreie2fz6n75274dbuamyh33aewazz7ndc4kqng5zibecgewvdwfy6tm?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -392,7 +393,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/bafkreid22ow57jtbzlj4cpc7m4xm5kv4z6mcm52bttr5tn4o3hqjjtjlay?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -427,7 +428,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/bafybeifb3u6blp5piw6nek4p4dqyjcqikkbv6qcky62ligfiu664mkixxm?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -463,7 +464,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover">
+              <div className="row g-0 col-hover" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/QmQ47Tncech46m3FrXftAHGJwuQdsoqz49iSaHbPjmD1Mj?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -498,7 +499,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover">
+              <div className="row g-0 col-hover" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/bafkreidmdcwbzydcbdmjl4sj5apa3oefp7oeqazagccehx2hkjx5ccbele?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -533,7 +534,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/QmZTEg52PBTUUK1rMovQAZhwC9qjwWC84nLs9jXXdyxPdF?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -567,7 +568,7 @@ export const LastCards = () => {
             </div>
           </div>
           <div className="col no-padding">
-            <div className="card bg-transparent text-white hover-border-secondary col-hover">
+            <div className="card bg-transparent text-white hover-border-secondary col-hover" data-bs-toggle="modal" data-bs-target="#exampleModal">
               <div className="row g-0 h-100" style={{flexWrap: "nowrap"}}>
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
@@ -603,7 +604,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary border-red">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1 position-relative" style={{ width: "128px" }}>
                     <img src="https://prod-livestream-thumbnails-841162682567.s3.us-east-1.amazonaws.com/334458/1750749510036.jpeg?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -640,7 +641,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/bafkreihaje56n6ui2xkwcj6qqgoy45iebor5lueelievqi3uvq7534c4aa?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -676,7 +677,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/bafybeiennzi47kw65vokljj7daojyb26vncf4u47bzxmiguv3mtky3yxju?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -712,7 +713,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/bafkreib3e4vbccf4u4jdqv2rsjtz5fgr4475mhr5czfm4hfwygdrv4yhre?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -747,7 +748,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary border-red">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1 position-relative" style={{ width: "128px" }}>
                     <img src="https://prod-livestream-thumbnails-841162682567.s3.us-east-1.amazonaws.com/333981/1750716381081.jpeg?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -784,7 +785,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/bafkreigkqh6s4wand4rlfh5bq3jzbcmw3kbmxx6lemrvtgxs3chptqah7i?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -820,7 +821,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover">
+              <div className="row g-0 col-hover" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/bafkreihjygx7hmlj5zckjbmcvrynxkhpu7g2grpjvhtjl5i62ghboqvrmy?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -855,7 +856,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/bafkreibwculpk6kaodvsmd3aftvlfpsncgjjouibnndtbwyuywz5g3wfe4?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -890,7 +891,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover">
+              <div className="row g-0 col-hover" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/bafkreicowprtyexoiri23cllyeyajzhtauz53yaz2wux6vumdkalflmnvu?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -926,7 +927,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary border-red">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1 position-relative" style={{ width: "128px" }}>
                     <img src="https://prod-livestream-thumbnails-841162682567.s3.us-east-1.amazonaws.com/333975/1750716407920.jpeg?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -965,7 +966,7 @@ export const LastCards = () => {
           {/* <!-- //////////////////////// note done ////////////////////////////// --> */}
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/QmXY8QTq2juebZimE3NMVCsDPTc97o8RxEo7tGyCsLVo5s?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -1000,7 +1001,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/bafybeiesxhhkw3gy7n7zbgehzqbih6gww5f3rtp67gucc2m7plqbz4ue6y?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -1035,7 +1036,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/bafybeih747agrfljdfzet7wq62ow6g7tshce6duz4mc5mqhucqntdp7cmy?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -1070,7 +1071,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/bafybeifxbenl5tuuy6bhfjnvk7g44lc7ixbyzjpjoxett3jpx62k77422u?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -1105,7 +1106,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary border-red">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1 position-relative" style={{ width: "128px" }}>
                     <img src="https://prod-livestream-thumbnails-841162682567.s3.us-east-1.amazonaws.com/335773/1750795726734.jpeg"
@@ -1142,7 +1143,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/bafybeidqcs67k46gffsmf4q2hrqq3xykpqngnxj33hm423flu2eef6emh4?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -1177,7 +1178,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/bafkreiepd6fhsynnaijwmdb3dr6mv2tzqmgswhv4ukhfil6c6tf27umvqy?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -1212,7 +1213,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/bafkreia2dtqassrwyiiq2qwrqrcvqemfggabnbdav66rgoplhspg5qoyiu?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -1247,7 +1248,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/bafybeiavsfhvwr6nu5jgylcvk4ryt4d3oathurrzsokcehxuzdcuxr3sge?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -1283,7 +1284,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/bafybeihecokdhl5p7lt4iyjvyisykmnjyqojfy52drljxanwddu4dwdeqe?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -1318,7 +1319,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/bafkreihkvhprwactvibckvjpak7gf7rtwhittawbgla46o2h2wgefvwwqy?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -1353,7 +1354,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/bafkreidpjik2d46gmkqs6iprklxnu6fxrcela7rfsogmtqpacbkb5ra2sy?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -1388,7 +1389,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/bafkreiggdb3hp4n4c67io6w7wfdk7f53nwpphozgfyn44ar7i72vkwctnm?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -1423,7 +1424,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/QmS3rD21L5CM53Vo3hTAVTWon2PKFhpPUdHjiyMEbYhsCb?img-width=256&img-dpr=2&img-onerror=redirect"
@@ -1458,7 +1459,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/bafybeib7qxarf4dlhgt64mlrcs4j4zhcansusog3gw2gofziv7nr2owqde?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -1494,7 +1495,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover">
+              <div className="row g-0 col-hover" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/QmRdficHU8ocmZoEpwDZtLdTzGLSKEU4rQ63vSiiXSZBh5?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -1526,7 +1527,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/bafybeiadjk3erdhuxdd7lpnoodws35xeryi5ktnz3udvxyitd5esfgiaai?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -1558,7 +1559,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/bafkreify5lddylcvb5y3algpevrhvfquwxpmlqlkorryppjgyxfzgf35by?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -1590,7 +1591,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/bafybeiaw2pfcsqkyuthyfb5or3n3suwsjvzncxjo7v3qrcm245zdwhylli?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -1621,7 +1622,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/bafkreidtmv5yitzrj6hk5ugrl5zrapl65nw73dlwfornzaoybj3mnj6z2q?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -1652,7 +1653,7 @@ export const LastCards = () => {
           </div>
           <div className="col no-padding">
             <div className="card bg-transparent text-white hover-border-secondary">
-              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}}>
+              <div className="row g-0 col-hover" style={{flexWrap: "nowrap"}} data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div className="col-auto pe-2 pt-2">
                   <div className="ratio ratio-1x1" style={{ width: "128px" }}>
                     <img src="https://pump.mypinata.cloud/ipfs/bafkreia4hvyvzls4solcqs2nszi5vlhvx7ubwgm5xwjqo2wggqg5cdx24y?img-width=128&img-dpr=2&img-onerror=redirect"
@@ -1687,7 +1688,7 @@ export const LastCards = () => {
         <div className="w-100 text-center">
           <button className="text-sm cursor-not-allowed text-slate-400 bg-transparent no-border disabled-button" disabled>[ &lt;&lt; ]</button>
             <span className="text-light">1</span>
-          <button className="text-sm cursor-not-allowed text-slate-400 bg-transparent text-light no-border">[ &gt;&gt; ]</button>
+          <button className="text-sm cursor-not-allowed text-slate-400 bg-transparent text-light no-border" data-bs-toggle="modal" data-bs-target="#exampleModal">[ &gt;&gt; ]</button>
         </div>
         </section>
         <section className="footer bg-transparent p-color">
@@ -1698,13 +1699,13 @@ export const LastCards = () => {
                 <p className="mb-0 small">© pump.fun 2025</p>
               </div>
               <div className="col-12 col-md-8 mb-md-0 d-flex justify-content-center flex-wrap gap-1 padding-footer">
-                <a className="text-decoration-underline small p-color" href="/docs/privacy-policy">privacy policy</a>
+                <Link className="text-decoration-underline small p-color" data-bs-toggle="modal" data-bs-target="#exampleModal">privacy policy</Link>
                 <span>|</span>
-                <a className="text-decoration-underline small p-color" href="/docs/terms-and-conditions">terms of service</a>
+                <Link className="text-decoration-underline small p-color" data-bs-toggle="modal" data-bs-target="#exampleModal">terms of service</Link>
                 <span>|</span>
-                <a className="text-decoration-underline small p-color" href="/docs/fees">fees</a>
+                <Link className="text-decoration-underline small p-color" data-bs-toggle="modal" data-bs-target="#exampleModal">fees</Link>
                 <span>|</span>
-                <a className="text-decoration-underline small p-color" href="https://t.me/pump_tech_updates" target="_blank">tech updates</a>
+                <Link className="text-decoration-underline small p-color" data-bs-toggle="modal" data-bs-target="#exampleModal">tech updates</Link>
               </div>
               <div className="col-12 col-md-3 text-md-end d-none d-md-block"></div>
             </div>
@@ -1712,18 +1713,18 @@ export const LastCards = () => {
           <div>
             <nav className="navbar navbar-dark bg-dark-bottom border-top fixed-bottom border-secondary d-block d-lg-none">
               <div className="container-fluid d-flex justify-content-around px-0 custom-icons">
-                <a href="/board" className="text-center navlink-home2 py-2">
+                <Link className="text-center navlink-home2 py-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 25" fill="none" className="sidebar-logo-transition-multi-2 h-6 w-6"><path d="M13.8153 2.55582C12.7771 1.64342 11.2229 1.64342 10.1847 2.55582L3.93468 8.04824C3.34056 8.57035 3 9.323 3 10.1139V18.459C3 19.9778 4.23122 21.209 5.75 21.209H8.16057C9.12707 21.209 9.91057 20.4255 9.91057 19.459V17.209C9.91057 16.1044 10.806 15.209 11.9106 15.209H12C13.1046 15.209 14 16.1044 14 17.209V19.459C14 20.4255 14.7835 21.209 15.75 21.209H18.25C19.7688 21.209 21 19.9778 21 18.459V10.1139C21 9.323 20.6594 8.57035 20.0653 8.04824L13.8153 2.55582Z" fill="currentColor"></path></svg>
-                </a>
-                <a href="/board" className="text-center text-light">
+                </Link>
+                <Link className="text-center text-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 25" fill="none" className="h-[30px] w-[30px]"><path d="M16.2426 12.2094H7.75736M12 16.4521V7.9668M21.25 12.209C21.25 17.3176 17.1086 21.459 12 21.459C6.89137 21.459 2.75 17.3176 2.75 12.209C2.75 7.10035 6.89137 2.95898 12 2.95898C17.1086 2.95898 21.25 7.10035 21.25 12.209Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"></path></svg>
-                </a>
-                <a href="/create" className="text-center text-light">
+                </Link>
+                <Link className="text-center text-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" className="h-[30px] w-[30px]"><path d="M4.75 4.75H14.25C15.3546 4.75 16.25 5.64543 16.25 6.75V8.75L19.7681 6.81505C20.4345 6.44851 21.25 6.93067 21.25 7.69127V16.3087C21.25 17.0693 20.4345 17.5515 19.7681 17.1849L16.25 15.25V17.25C16.25 18.3546 15.3546 19.25 14.25 19.25H4.75C3.64543 19.25 2.75 18.3546 2.75 17.25V6.75C2.75 5.64543 3.64543 4.75 4.75 4.75Z" stroke="#F8FAFC" strokeWidth="1.5"></path><path d="M12.25 12C12.25 13.5188 11.0188 14.75 9.5 14.75C7.98122 14.75 6.75 13.5188 6.75 12C6.75 10.4812 7.98122 9.25 9.5 9.25C11.0188 9.25 12.25 10.4812 12.25 12Z" stroke="#F8FAFC" strokeWidth="1.5"></path></svg>
-                </a>
-                <a href="/live" className="text-center text-light">
+                </Link>
+                <Link className="text-center text-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" className="h-[30px] w-[30px]"><path d="M7 2.75V10.75M7 10.75H5.75C4.64543 10.75 3.75 11.6454 3.75 12.75V16.25C3.75 17.3546 4.64543 18.25 5.75 18.25H7M7 10.75H8.25C9.35457 10.75 10.25 11.6454 10.25 12.75V16.25C10.25 17.3546 9.35457 18.25 8.25 18.25H7M7 18.25V21.25M17 2.75001V5.75M17 5.75H15.75C14.6454 5.75 13.75 6.64543 13.75 7.75V16.25C13.75 17.3546 14.6454 18.25 15.75 18.25H17M17 5.75H18.25C19.3546 5.75 20.25 6.64543 20.25 7.75V16.25C20.25 17.3546 19.3546 18.25 18.25 18.25H17M17 18.25V21.25" stroke="#F8FAFC" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path></svg>
-                </a>
+                </Link>
                 {/* <!-- Example single dropdown button --> */}
                 <div className="btn-group dropup">
                   <a className="nav-link" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false" data-bs-toggle="dropdown" aria-expanded="false">
@@ -1733,18 +1734,18 @@ export const LastCards = () => {
                   
                   </a>
                   <ul className="dropdown-menu dropdown-bg-bottom dropdown-menu-end left-auto">
-                    <li><a className="dropdown-item text-white nav-text-size bg-hover" href="#">PumpSwap</a></li>
-                    <li><a className="dropdown-item text-white nav-text-size bg-hover" href="#">livestream policy</a></li>
-                    <li><a className="dropdown-item text-white nav-text-size bg-hover" href="#">DMCA policy</a></li>
-                    <li><a className="dropdown-item text-white nav-text-size bg-hover" href="#">trademark guidelines</a></li>
-                    <li><a className="dropdown-item text-white nav-text-size bg-hover" href="#">how it works</a></li>
+                    <li><Link className="dropdown-item text-white nav-text-size bg-hover" data-bs-toggle="modal" data-bs-target="#exampleModal">PumpSwap</Link></li>
+                    <li><Link className="dropdown-item text-white nav-text-size bg-hover" data-bs-toggle="modal" data-bs-target="#exampleModal">livestream policy</Link></li>
+                    <li><Link className="dropdown-item text-white nav-text-size bg-hover" data-bs-toggle="modal" data-bs-target="#exampleModal">DMCA policy</Link></li>
+                    <li><Link className="dropdown-item text-white nav-text-size bg-hover" data-bs-toggle="modal" data-bs-target="#exampleModal">trademark guidelines</Link></li>
+                    <li><Link className="dropdown-item text-white nav-text-size bg-hover" data-bs-toggle="modal" data-bs-target="#exampleModal">how it works</Link></li>
                     <li><hr className="dropdown-divider"/></li>
                     <li>
                       <span className="dropdown-item text-white nav-text-size bg-hover-non">
-                        <span className="twitter-icon me-2"><i className="fa-brands fa-x-twitter"></i></span>
-                        <span className="instagram-icon me-2"><i className="fa-brands fa-instagram"></i></span>
-                        <span className="tiktok-icon me-2"><i className="fa-brands fa-tiktok" style={{color: "#ffffff"}}></i></span>
-                        <span className="youtube-icon me-2"><i className="fa-brands fa-youtube" style={{color: "#ffffff"}}></i></span>
+                        <span className="twitter-icon me-2"><i className="fa-brands fa-x-twitter" data-bs-toggle="modal" data-bs-target="#exampleModal"></i></span>
+                        <span className="instagram-icon me-2"><i className="fa-brands fa-instagram" data-bs-toggle="modal" data-bs-target="#exampleModal"></i></span>
+                        <span className="tiktok-icon me-2"><i className="fa-brands fa-tiktok" style={{color: "#ffffff"}} data-bs-toggle="modal" data-bs-target="#exampleModal"></i></span>
+                        <span className="youtube-icon me-2"><i className="fa-brands fa-youtube" style={{color: "#ffffff"}} data-bs-toggle="modal" data-bs-target="#exampleModal"></i></span>
                       </span>
                     </li>
                   </ul>

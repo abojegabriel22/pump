@@ -605,7 +605,7 @@ footer{
     padding-right: 6rem !important;
   }
   .card-body{
-    padding: 0px !important;
+    padding: 0px;
   }
   .no-padding{
     padding: 0px !important;

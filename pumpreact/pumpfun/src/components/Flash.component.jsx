@@ -223,7 +223,7 @@ export default function TickerComponent(){
             <span className="hiden me-auto">
               <img className="logo-image" src="https://i.ibb.co/Wvb8Js3W/logo.png" alt="Pump" loading="lazy" height="25" />
             </span>
-            <button className="btn btn-color btn-color-2">
+            <button className="btn btn-color btn-color-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
               <span>create coin</span>
             </button>
             <button className="btn btn-color btn-color-1 px-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
