@@ -1,5 +1,6 @@
 
 import {useState, useEffect, useRef} from "react"
+import { Login } from "./Login"
 
 const mockTickerItems = [
   {
@@ -203,30 +204,33 @@ export default function TickerComponent(){
     const rightType = getRandomType()
 
     return (
-      <div id="right-float" className="d-flex justify-content-between align-items-center">
-        <div className="animation-div flex-grow-1">
-          <div className="ticker-wrapper my-md-1">
-            <div id="ticker-box" className="ticker-box d-flex">
-              <div id="ticker-left" className="ticker-slot" ref={tickerLeftRef} key={`left-${leftIndex}-${leftType}`}>
-                {updateTickerItems(mockTickerItems[leftIndex], true, leftType)}
-              </div>
-              <div id="ticker-right" className="ticker-slot" ref={tickerRightRef}>
-                {updateTickerItems(mockTickerItems[rightIndex], false, rightType)}
+      <>
+        <Login />
+        <div id="right-float" className="d-flex justify-content-between align-items-center">
+          <div className="animation-div flex-grow-1">
+            <div className="ticker-wrapper my-md-1">
+              <div id="ticker-box" className="ticker-box d-flex">
+                <div id="ticker-left" className="ticker-slot" ref={tickerLeftRef} key={`left-${leftIndex}-${leftType}`}>
+                  {updateTickerItems(mockTickerItems[leftIndex], true, leftType)}
+                </div>
+                <div id="ticker-right" className="ticker-slot" ref={tickerRightRef}>
+                  {updateTickerItems(mockTickerItems[rightIndex], false, rightType)}
+                </div>
               </div>
             </div>
           </div>
+          <div className="buttons-div d-flex gap-2">
+            <span className="hiden me-auto">
+              <img className="logo-image" src="https://i.ibb.co/Wvb8Js3W/logo.png" alt="Pump" loading="lazy" height="25" />
+            </span>
+            <button className="btn btn-color btn-color-2">
+              <span>create coin</span>
+            </button>
+            <button className="btn btn-color btn-color-1 px-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <span className="bold-font">log in</span>
+            </button>
+          </div>
         </div>
-        <div className="buttons-div d-flex gap-2">
-          <span className="hiden me-auto">
-            <img className="logo-image" src="https://i.ibb.co/Wvb8Js3W/logo.png" alt="Pump" loading="lazy" height="25" />
-          </span>
-          <button className="btn btn-color btn-color-2">
-            <span>create coin</span>
-          </button>
-          <button className="btn btn-color btn-color-1 px-4">
-            <span className="bold-font">log in</span>
-          </button>
-        </div>
-      </div>
+      </>
     )
 }
