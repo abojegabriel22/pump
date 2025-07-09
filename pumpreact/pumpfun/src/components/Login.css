@@ -1,0 +1,57 @@
+
+.bg-dark-background{
+  background-color: #15161b;
+  color: var(--text-color);
+}
+.bg-gray{
+  background-color: #2b2b29;
+  color: var(--text-color) !important;
+}
+.btn-close.no-icon {
+  background-image: none !important;
+  align-items: center;
+  justify-content: center;
+  width: 20px;     /* set your desired button size */
+  height: 20px;
+  padding: 0;
+  margin-right: 0px !important;
+  margin-bottom: 0px !important;
+}
+.start-500{
+  left: 25% !important;
+}
+/* Make modal width match pump.fun (~356px) and center it */
+.custom-modal {
+  max-width: 356px;
+  width: 100%;
+  margin: auto;
+}
+
+.custom-modal-content {
+  padding: 1rem;
+  background-color: #15161b; /* or your dark bg */
+  border-radius: 12px;
+  border: 1px solid #2f2f2f;
+  color: white;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Optionally limit max height and allow scroll */
+.custom-modal-content {
+  max-height: 90vh;
+  overflow-y: auto;
+}
+.modal-header{
+  padding: 0px 0px 1rem 1rem !important;
+  border-bottom: none;
+}
+.modal-title{
+  font-size: 1.125rem !important;
+  line-height: 1.75rem !important;
+}
+.btn-green{
+  background-color: var(--green-color);
+}
+.btn-blue{
+  background-color: var(--blue-color);
+}
