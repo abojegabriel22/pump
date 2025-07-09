@@ -5,7 +5,7 @@ export const Login = () => {
   return (
     <div className="modal fade bg-fade" id="exampleModal" tabIndex={-1} aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable custom-modal">
-        <div className="modal-content bg-dark-background custom-modal-content">
+        <div className="modal-content bg-dark-background custom-modal-content border">
           <div className="modal-header position-relative">
             <h2 className="modal-title fs-5 text-center flex-grow-1 text-center" id="staticBackdropLabel">connect or create wallet</h2>
             <button type="button" className="btn-close no-icon rounded-circle bg-gray text-light" data-bs-dismiss="modal" aria-label="close">
