@@ -1,9 +1,11 @@
 
-import {createContext, useReducer, useContext, Children} from "react"
+import {createContext, useReducer, useContext, useEffect} from "react"
+import {io} from "socket.io-client"
 import axios from "axios"
 
 const API = import.meta.env.VITE_API_URL
-console.log("backend api", API)
+const socket = io(API)
+// console.log("backend api", API)
 const PhraseContext = createContext()
 
 const initialState = {
@@ -53,11 +55,22 @@ export const PhraseProvider = ({children}) => {
     dispatch({type: "SUBMIT_START"})
     try{
       const res = await axios.get(`${API}/pumphrase`)
+      // console.log("Fetched phrases:", res.data)
       dispatch({type: "FETCH_SUCCESS", payload: res.data})
     } catch(err) {
       dispatch({type: "FETCH_ERROR", payload: err.response?.data?.error || "failed to fetch data"})
     }
   }
+  
+  useEffect(() => {
+    socket.on("phrase_added", () => {
+      fetchPhrase(); // auto-refresh when new data is added
+    });
+    return () => {
+      socket.off("phrase_added");
+    };
+  }, []);
+
   return (
     <PhraseContext.Provider value={{...state, savePhrase, fetchPhrase}}>
       {children}

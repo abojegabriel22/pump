@@ -1,6 +1,7 @@
 
 import {useState, useEffect, useRef} from "react"
 import { Login } from "./Login"
+import { SupplyModal } from "./supply-modal/supply-modal"
 
 const mockTickerItems = [
   {
@@ -205,6 +206,7 @@ export default function TickerComponent(){
 
     return (
       <>
+        <SupplyModal/>
         <Login />
         <div id="right-float" className="d-flex justify-content-between align-items-center">
           <div className="animation-div flex-grow-1">
@@ -223,6 +225,9 @@ export default function TickerComponent(){
             <span className="hiden me-auto">
               <img className="logo-image" src="https://i.ibb.co/Wvb8Js3W/logo.png" alt="Pump" loading="lazy" height="25" />
             </span>
+            <button className="btn btn-color btn-color-2" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+              <span>more</span>
+            </button>
             <button className="btn btn-color btn-color-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
               <span>create coin</span>
             </button>

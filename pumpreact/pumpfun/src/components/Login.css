@@ -55,3 +55,7 @@
 .btn-blue{
   background-color: var(--blue-color);
 }
+::placeholder {
+  color: var(--dark-text) !important; /* or white */
+  opacity: 1 !important;
+}

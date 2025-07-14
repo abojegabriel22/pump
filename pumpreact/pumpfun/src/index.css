@@ -746,7 +746,7 @@ footer{
   .search-icon {
       opacity: 1;
       margin-left: auto;
-      margin-right: 20px;
+      /* margin-right: 20px; */
   }
   .middle-animation {
     margin-inline: 1rem;

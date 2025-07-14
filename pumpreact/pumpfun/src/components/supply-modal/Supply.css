@@ -1,0 +1,43 @@
+
+.bg-dark-background1{
+  background-color: #15161b;
+  color: var(--text-color);
+}
+.custom-modal-content1 {
+  padding: 1rem;
+  background-color: #15161b; /* or your dark bg */
+  border-radius: 12px;
+  border: 1px solid #2f2f2f;
+  color: white;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+.btn-green1{
+  background-color: var(--green-color);
+}
+.btn-blue1{
+  background-color: var(--blue-color);
+}
+.animate1{
+  animation: spin .9s infinite;
+}
+@keyframes spin {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 500px) {
+  .button-size1{
+    font-size: 14px;
+  }
+  .modal-size{
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .button-size1{
+    font-size: 12px;
+  }
+}

